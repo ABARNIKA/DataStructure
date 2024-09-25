@@ -1,0 +1,50 @@
+Linear Search to geet User Input
+
+import java.util.*;
+ public class linearsearch{
+    public static void main(String[] args)
+    {
+        Scanner a=new Scanner(System.in);
+        
+        System.out.println("Enter the size of element");
+        int b=a.nextInt();
+        int[] arr=new int[b];
+        int flag=0;
+        int i;
+        System.out.println("Enter the array elements");
+        for( i=0;i<b;i++){
+            
+            arr[i]=a.nextInt();
+        }
+        System.out.println("Enter the elemnt");
+        int m=a.nextInt();
+        for(i=0;i<arr.length;i++)
+        { 
+            if(m==arr[i])
+            {
+                flag=1;
+                break;
+            } 
+        }  
+
+        if(flag==0)
+        System.out.println("element not found");
+        else
+        System.out.println("Element found @position "+i);
+    
+}
+ }
+
+Output:
+      
+Enter the size of element
+5
+Enter the array elements
+23
+45
+67
+89
+21
+Enter the elemnt
+45
+Element found @position 1

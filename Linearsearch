@@ -1,4 +1,4 @@
-Linear Search to geet User Input
+Linear Search to get User Input
 
 import java.util.*;
  public class linearsearch{
